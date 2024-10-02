@@ -1,0 +1,14 @@
+{
+  "name": "cloudflare-dyndns-local",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "deploy": "docker build --platform linux/arm64/v8 -t niekpeters/cloudflare-dyndns-local . && docker push niekpeters/cloudflare-dyndns-local"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
